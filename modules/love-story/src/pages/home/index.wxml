@@ -1,0 +1,13 @@
+<view class="page-wrapper">
+  <view class="cell-group">
+    <view class="cell-item">
+      <image class="avatar" mode="aspectFit" src="{{ info.avatar }}" />
+    </view>
+  </view>
+  <view class="cell-group">
+    <view class="cell-item" wx:for="{{ properties }}" wx:key="index">
+      <text class="label">{{ item.label }}</text>
+      <text class="text">{{ item.value }}</text>
+    </view>
+  </view>
+</view>

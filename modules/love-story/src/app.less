@@ -1,0 +1,27 @@
+.cell-group {
+  margin-bottom: 40rpx;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #ebedf0;
+  background-color: #fff;
+
+  .cell-item {
+    display: flex;
+    padding: 20rpx 36rpx;
+    line-height: 48rpx;
+    color: #444;
+
+    &:not(:first-child) {
+      border-top: 1px solid #ebedf0;
+    }
+
+    .label {
+      font-weight: bold;
+    }
+
+    .text {
+      flex-grow: 1;
+      text-align: right;
+    }
+  }
+}
